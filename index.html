@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mi PortaFolio!👾🐭</title>
+    <meta name="theme-color" content="#111">
+    <meta name="description" content="Portfolio de Beto. Maquetación, estilo y algo de desarrollo...">
+    <meta http-equiv="refresh" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="logo.png">
+
+</head>
+<body>
+    <img class="mundo" src="mundo.png" alt="">
+    <div id="spin" class="spin">
+        <span><img src="logo.png" alt=""></span>
+    </div>
+    
+    <header>
+        <div class="consola-container">
+
+            <div id="consola" class="consola">
+                ¡Hola! Este es mi PortFolio, que bueno que lo estés visitando. Me interesa la MAQUETACIÓN y el DISEÑO WEB. Si tenés alguna pregunta, no dudes en consultarme al wasapo :D
+            </div>
+            <div class="blink"></div>
+            
+        </div>
+    </header>
+    
+    <aside>
+        <div id="control-ctn" class="control-container">
+            <div class="control-btn btn" onclick="displayInfo('personal')"><i class="fa-solid fa-user"></i></div>
+            <div class="control-btn btn" onclick="displayInfo('edu')"><i class="fa-solid fa-school"></i></div>
+            <div class="control-btn btn" onclick="displayInfo('diseño')" ><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="control-btn btn" onclick="displayInfo('code')"><i class="fa-solid fa-code"></i></div>
+            <div class="control-btn btn" onclick="displayInfo('exp')" ><i class="fa-solid fa-folder-open"></i></div>
+        </div>
+    </aside>
+    
+    <main class="display-container-container">
+        <article id="personal" class="display-container none">
+            <div class="display-item btn">
+                <img id="foto-perfil" src="Perfil.jfif" alt="">
+            </div>
+            <div class="display-item btn json">
+                <span>{</span>
+                <span><strong>"nombre"</strong> : <em>"Beto"</em>,</span>
+                <span><strong>"apellido"</strong> : <em>"Vazquez"</em>,</span>
+                <span><strong>"perfil"</strong> : <em>"frontend"</em>,</span>
+                <span><strong>"edad"</strong> : <em>36</em>,</span>
+                <span><strong>"residencia"</strong> : <em>"Argentina"</em>,</span>
+                <span><strong>"nivel"</strong> : <em>"junior"</em>,</span>
+                <span><strong>"emoji"</strong> : "😅"</span>
+                <span>}</span>
+            </div>
+        </article>      
+        <article id="edu" class="display-container none">
+            <div class="display-item btn"><img src="secundaria.png" alt=""></div>
+            <div class="display-item btn"><i class="fa-solid fa-book"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-font"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-language"></i></div>
+            <div class="display-item btn"><img src="curso_dalto1.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_dalto2.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_dalto3.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_powell.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_midu.png" alt=""></div>           
+            <div class="display-item btn"><img src="curso_data visualization.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_api.png" alt=""></div>
+            <div class="display-item btn"><img src="curso_ecma.png" alt=""></div>
+            <a href="https://thecodingtrain.com/tracks/the-nature-of-code-2" target="_blank"><div class="display-item btn cursando"><img src="curso_nature.png" alt=""></div></a>
+            <div class="display-item btn proximamente"><img src="curso_three.png" alt=""></div>
+            <div class="display-item btn"><i class="fa-solid fa-music"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-volume-high"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-seedling"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-bicycle"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-joint"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-trowel"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-microscope"></i></div>
+            <div class="display-item btn"><i class="fa-brands fa-linux"></i></div>
+            <div class="display-item btn"><i class="fa-brands fa-wpexplorer"></i></div>
+        </article>
+        <article id="diseño" class="display-container none">
+            <div class="display-item btn"><img src="logo_ink.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_blender.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_gimp.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_audacity.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_photoshop.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_premiere.png" alt=""></div>
+            <div class="display-item btn"><img src="log_ilustrator.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_audition.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_nitro.png" alt=""></div>
+            <div class="display-item btn"><img src="logo_openshot.png" alt=""></div>
+        </article>
+        <article id="code" class="display-container none">
+            <div class="display-item btn full"><i class="fa-brands fa-html5 rojo"></i></div>
+            <div class="display-item btn full"><i class="fa-brands fa-css3-alt azul"></i></div>
+            <div class="display-item btn medio"><i class="fa-brands fa-js amarillo" ></i></div>
+            <div class="display-item btn medio"><img src="logo_p5js.png" alt=""></div>
+            <div class="display-item btn medio"><i class="fa-brands fa-node-js verde"></i></div>
+            <div class="display-item btn full"><i class="fa-brands fa-git rojo"></i></div>
+            <div class="display-item btn full"><i class="fa-brands fa-github"></i></div>
+            <div class="display-item btn medio"><i class="fa-brands fa-react azul"></i></div>
+            <div class="display-item btn medio"><i class="fa-solid fa-database azul"></i></div>
+            <div class="display-item btn full"><i class="fa-brands fa-wordpress azul"></i></div>
+        </article>
+        <article id="exp" class="display-container none">
+            <div class="display-item btn libro"><img src="población.png" alt=""></div>
+            <div class="display-item btn libro"><img src="paginaleaks.png" alt=""></div>
+            <div class="display-item btn libro"><a href="https://youtu.be/FSTis3_mX6k?si=X5h47jTSI978vcdu" target="_blank"><img src="portada pseudo.png" alt="Portada del libro La Biblia de la pseudociencia de Doctor anonimus"></a></div>
+            <div class="display-item btn"><img src="" alt=""><i class="fa-solid fa-print"></i></div>
+            <div class="display-item btn"><a href="https://www.cde.org.py/tekopora-un-documental-retrata-los-usos-anticonceptivos-de-las-plantas-en-las-mujeres-indigenas/" target="_blank"><img src="https://linagaitan.hotglue.me/?start.head.157005194270" alt="Sonidista en Documental Educativo, tekoporá"></a></div>
+            <div class="display-item btn"><i class="fa-solid fa-code"></i></div>
+            <div class="display-item btn"><i class="fa-solid fa-ghost"></i></div>     
+            <div class="display-item btn"><i class="fa-solid fa-plus"></i></div>
+        </article>
+    </main>
+    
+    <input id="input-range" type="range" onchange="moverLuna()" value="80">
+    <div class="sol"></div>
+    <div id="luna" class="luna"></div>
+    <div class="avatar-container btn">
+        <img src="Perfil.jfif" alt="">
+    </div>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=5491144078669&text=Hola%2C%20Beto!">
+<div class="whatsapp btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div></a>
+    <div id="contador" class="count-container">
+        <i class="fa-brands fa-youtube"></i>
+        <span>horas en cursos de YouTube</span>
+        <div id="contadorYT" class="count">0000000</div>
+    </div>
+    <script src="scripts.js" ></script>
+  </body>
+</html>
