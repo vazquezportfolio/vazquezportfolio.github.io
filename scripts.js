@@ -1,13 +1,19 @@
 // SPINNER PRE CARGA DE LA PAGINA 😄
 
 let spin = document.getElementById('spin');
+let portfolioBtn = document.getElementById('portfolio-btn');
 
-window.onload = function() {
+portfolioBtn.addEventListener('click', ()=>{
+  spin.style.visibility ="hidden";
+  spin.style.opacity = "0";
+})
+
+/* window.onload = function() {
   setTimeout(() => {
     spin.style.visibility = "hidden";
     spin.style.opacity = "0";
   }, 1000);
-};
+}; */
 
 
 //FUNCION BOTONERA -----------------------------------------------
@@ -47,34 +53,33 @@ function maquinaDeEscribir(texto, display) {
 //Mensajes -------------------------//
 
 const mensajeDisplay = ["Esta es mi información personal...", 
-                        "Estoy orientado al diseño y la creatividad, mi educación ha sido autodidáctica. Me gustaría resaltar los cursos que tomé en el último tiempo y algunos hobbies.", 
+                        "Me oriento al diseño y la creatividad. Me gustaría resaltar los cursos que tomé en el último tiempo y algunos hobbies.", 
                         "Desde chico practico con distintas herramientas que permiten la realización audiovisual, estas son algunas:",
                         "Hace algunos años vengo codeando, estas son las tecnologías y habilidades que manejo por el momento. El color de fondo representa mi nivel con cada tecnología.", 
-                        "Me inclino a pequeños proyectos y emprendimientos, pero estoy abierto a propuestas más ambiciosas."];
+                        "Me inclino a pequeños proyectos y emprendimientos, pero estoy abierto a nuevas propuestas."];
 
-                        const mensajePersonal = ['Qué linda foto :D',
-                        'Es un JSON 😄 '
+                        const mensajePersonal = ['...',
+                        'Algunos datos'
                         ];
 
-const mensajeEducacion = ['Tengo el secundario completo. La imagen es ilustrativa 😅',
-                          'Luego de la secundaria me interesó la lectura, en aquella época se usaban libros físicos 👨‍🦳',
-                          'Tengo buena ortografía y cultura general...',
+const mensajeEducacion = ['Estudié algunos años de Historia y en este momento Estudios de la Comunicación en UnSam',
+                          'Tengo conocimientos de literatura en general',
+                          'También buena ortografía',
                           "Also, I can speak English at a B2 level. I can have a fluid conversation. In fact, I’m studying code in this language. I prefer to watch series and movies in the original audio.",
                           'Desde el inicio de la pandemia, los creadores de contenido han subido a YouTube mucho material de alta calidad, lo que despertó mi interés por la programación. 🦾',
                           'Comencé con @soyDalto que tiene unos cursos muy completos de JavaScript, habla rapidísimo y se aprovecha mucho mejor el tiempo, no como en FreeCodeCamp o Platzi 😝',
-                          'He completado los tres niveles de JS, y ahora tengo una comprensión más amplia del universo que se puede construir y desarrollar en un navegador 🌐',
+                          'He completado los tres niveles de JS, y ahora tengo una comprensión más amplia del desarrollo web 🌐',
                           'Kevin Powell es uno de los mejores en el estilado de la web, constantemente sube contenido con las últimas novedades en CSS.',
                           '@MiduDev es un crack, he aprendido mucho de CSS y React con él 👾 ',
                           'Daniel Shiffman es profe en una Universidad de Nueva York. Con él, en @codingtrain, aprendo programación de gráficos y a utilizar la librería P5 de JavaScript.',
-                          'Aquí aprendí a hacer fetching de datos, consumir apis y algo de Backend 🤖',
+                          'Aquí aprendí a hacer fetching de datos, consumir APIs y algo de Backend 🤖',
                           'También las nuevas normas de ECMAScript.',
-                          '¡NATURE OF CODE! Es hermoso ver cómo se pueden emular las leyes de la física en un canvas... ¡de Newton al código!. Se alcanzan animaciones más realitas, naturales...',
+                          '¡NATURE OF CODE! Es hermoso ver cómo se pueden emular las leyes de la física en un canvas... ¡de Newton al código!. Se alcanzan animaciones más realistas, naturales...',
                           'Three.js es lo que se viene para desarrollar sitios web 3D. Creo que es el próximo curso que voy a tomar.',
                           'Entre algunos de mis hobbies se encuentra tocar música 🎹',
-                          'Algo de edición de sonido también manejo. Me interesa hacer podcast, o como se le decía antes... "radio" 📻',
+                          'Algo de edición de sonido también manejo. Me interesa hacer podcast 📻',
                           'Me gusta la huerta, agricultura y las cosas naturales. 🌻',
                           'La bicicleta es mi medio de transporte...🌞',
-                          'jhgjffd fdasa hguu frsewwq... 🤭',
                           '¡La arqueología! Me encanta la investigación amateur de estos temas. Hay mucho misterio por develar y viejos paradigmas por enterrar. 🤓🦴🦷',
                           'Bueno, la ciencia en sí me gusta, la buena ciencia 🍎',
                           'Linux me gusta bastante también... 💻',
@@ -82,9 +87,9 @@ const mensajeEducacion = ['Tengo el secundario completo. La imagen es ilustrativ
                           ];
 
 
-const mensajeDiseño = ['Inkscape es mi herramienta de diseño de imagen con vectores de cabecera, es de código abierto, ligera y profesional ✔ ',
+const mensajeDiseño = ['Inkscape es mi herramienta favorita, es de código abierto, ligera y profesional ✔ ',
                         '¡Blender! 😍 También de código abierto es el mejor software para animaciones 3D. Tiene extensiones que incorporan I.A. como chat GPT 👀',
-                        'Gimp, como el Photoshop pero libre. Muy bueno, pero utilizo más Inkscape.',
+                        'Gimp, como el Photoshop pero libre. Muy bueno.',
                         'Audition, libre para edición de audio.',
                         'También manejo la suite Adobe, si es necesario.',
                         'Premiere, de Adobe.',
@@ -96,15 +101,15 @@ const mensajeDiseño = ['Inkscape es mi herramienta de diseño de imagen con vec
 
 
 const mensajeCodigo = ['HTML 5, es el lenguaje de marcado web. Le da estructura a la página.',
-                      'CSS 3, es el código con el que estilamos nuestra web. El CSS moderno sorprende minuto a minuto.',
-                      'JavaScript, es el lenguaje de programación por excelencia de la web. Mi nivel es Junior con gran proyección 😝😝',
+                      'CSS 3, para estilado de nuestra web. El CSS moderno sorprende minuto a minuto.',
+                      'JavaScript, para web',
                       'P5 es una librería de JavaScript que nos facilita la programación en un canvas. Actualmente la utilizo en el curso de Dan Shiffman, "Nature of Code". ¡Altamente recomendable!',
-                      'Node.js, nos permite manejar múltiples conexiones simultáneamente, lo que lo hace ideal para aplicaciones en tiempo real como chats, juegos y aplicaciones de transmisión en vivo',
+                      'Node.js, para construir aplicaciones con lenguaje JS',
                       'Git, para el trabajo en equipo. Sirve para hacer un control de versiones y conectarlo con...',
                       'Github. Es una red social donde los programadores de todo el mundo se comparten código y repositorios de todo tipo 👨‍💻 .',
-                      'React, es el framework que utilizan grandes empresas IT.',
-                      'También manejo algo de bases de datos, si bien siempre en pequeños proyectos, creo que me puedo escalar sin mayores inconvenientes.',
-                      'Wordpress, sabiendo código Wordpress es más una limitación que un beneficio. Pero conozco bien la plataforma como para sacar mejor provecho 😉.'                      
+                      'React, es el framework de JS',
+                      'También manejo algo de bases de datos.',
+                      'Wordpress, conozco bien la plataforma.'                      
                       ];
 
 

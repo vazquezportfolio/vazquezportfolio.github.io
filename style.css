@@ -136,14 +136,33 @@ button {
         height: 100%;
         z-index: 9991;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        transition: all 1.5s;      
-}
+        transition: all 1.5s;
+        iframe {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            margin-top: 20px;
 
-.spin span {
-    z-index: 9992;
-    animation: girar 1.5s infinite;
+        }
+        span{
+            z-index: 99999;
+            padding: 10px;
+            background: radial-gradient(#f1e3e3,#57998f);
+            box-shadow: 0 0 5px;
+            border-radius: 10px;
+        }
+        span:hover{
+            cursor:pointer;
+            transform: scale(1.1);
+            transition: .3s;
+        }
+        span:active{
+            transform: scale(.9);
+        }
+
 }
 
 span > img {
@@ -196,6 +215,19 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
+.control-btn:hover::after{
+    content: attr(alt);
+    background: rgba(255, 255, 255, 0.733);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bolder;
+    left:3rem;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+}
+
 .control-btn:hover i {
     color: var(--sombras);
     transition: .3s;
@@ -243,39 +275,22 @@ input[type="range"]::-webkit-slider-thumb {
     position: absolute;
     top: 100px;
     right: 10px;
-    cursor: grab;
-    
-}
-
-.avatar-container:hover::after{
-    content: '😊';
-    transform: scale(3);
-    position: fixed;
-    display: flex;
-    left: 38%;
-    top: 5%;
-}
-
-.avatar-container:active{
-    cursor: grabbing;
-}
-
-.avatar-container:active::after { 
-    content: '😲';
-    position: absolute;
-    cursor: grabbing; 
-    top: -20px;   
-    transition: .5s;
-}
-
-.avatar-container img {
+    cursor: pointer;
+    background-color: #25232375;
     border-radius: 20px 5px 20px 20px;
     box-shadow: 0px 0px 10px var(--sombras);
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        color:rgba(255, 255, 255, 0.678);
+        transform: scale(2);
+    }
 }
-
+    
 main {
     display: flex;
     justify-content: center;
@@ -305,6 +320,7 @@ main {
     width: fit-content;
     width: -moz-fit-content;
     z-index: 99;
+    width: 100%;
   
 }
 
@@ -384,9 +400,10 @@ main {
 }
 
 #foto-perfil {
-    width: 500px;
-    height: 400px;
-    overflow: hidden;
+width: 100%;
+height: 100%;
+opacity: .3;
+transition: .4s;
 }
 
 .json {

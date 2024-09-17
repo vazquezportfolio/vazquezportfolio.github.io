@@ -16,14 +16,15 @@
 <body>
     <img class="mundo" src="mundo.png" alt="">
     <div id="spin" class="spin">
-        <span><img src="logo.png" alt=""></span>
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zqInf6Df9X4?si=wJnBMv89vDvyPEhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <span id="portfolio-btn">IR AL PORTFOLIO</span>
+        </div>
     
     <header>
         <div class="consola-container">
 
             <div id="consola" class="consola">
-                ¡Hola! Este es mi PortFolio, que bueno que lo estés visitando. Me interesa la MAQUETACIÓN y el DISEÑO WEB. Si tenés alguna pregunta, no dudes en consultarme al wasapo :D
+                ¡Hola! Este es mi PortFolio, que bueno que lo estés visitando. Si tenés alguna consulta, no dudes en escribirme!
             </div>
             <div class="blink"></div>
             
@@ -32,28 +33,25 @@
     
     <aside>
         <div id="control-ctn" class="control-container">
-            <div class="control-btn btn" onclick="displayInfo('personal')"><i class="fa-solid fa-user"></i></div>
-            <div class="control-btn btn" onclick="displayInfo('edu')"><i class="fa-solid fa-school"></i></div>
-            <div class="control-btn btn" onclick="displayInfo('diseño')" ><i class="fa-solid fa-pen-nib"></i></div>
-            <div class="control-btn btn" onclick="displayInfo('code')"><i class="fa-solid fa-code"></i></div>
-            <div class="control-btn btn" onclick="displayInfo('exp')" ><i class="fa-solid fa-folder-open"></i></div>
+            <div class="control-btn btn" alt= "Sobre mí" onclick="displayInfo('personal')"><i class="fa-solid fa-user"></i></div>
+            <div class="control-btn btn" alt= "Formación" onclick="displayInfo('edu')"><i class="fa-solid fa-school"></i></div>
+            <div class="control-btn btn" alt= "En diseño" onclick="displayInfo('diseño')" ><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="control-btn btn" alt= "En código" onclick="displayInfo('code')"><i class="fa-solid fa-code"></i></div>
+            <div class="control-btn btn" alt= "Experiencia" onclick="displayInfo('exp')" ><i class="fa-solid fa-folder-open"></i></div>
         </div>
     </aside>
     
     <main class="display-container-container">
         <article id="personal" class="display-container none">
-            <div class="display-item btn">
-                <img id="foto-perfil" src="Perfil.jfif" alt="">
+            <div class="display-item btn" style="background-color: transparent">
+                <img id="foto-perfil" src="fotocv.png" alt="">
             </div>
             <div class="display-item btn json">
                 <span>{</span>
-                <span><strong>"nombre"</strong> : <em>"Beto"</em>,</span>
+                <span><strong>"nombre"</strong> : <em>"Norberto"</em>,</span>
                 <span><strong>"apellido"</strong> : <em>"Vazquez"</em>,</span>
-                <span><strong>"perfil"</strong> : <em>"frontend"</em>,</span>
-                <span><strong>"edad"</strong> : <em>36</em>,</span>
+                <span><strong>"edad"</strong> : <em>37</em>,</span>
                 <span><strong>"residencia"</strong> : <em>"Argentina"</em>,</span>
-                <span><strong>"nivel"</strong> : <em>"junior"</em>,</span>
-                <span><strong>"emoji"</strong> : "😅"</span>
                 <span>}</span>
             </div>
         </article>      
@@ -76,7 +74,6 @@
             <div class="display-item btn"><i class="fa-solid fa-volume-high"></i></div>
             <div class="display-item btn"><i class="fa-solid fa-seedling"></i></div>
             <div class="display-item btn"><i class="fa-solid fa-bicycle"></i></div>
-            <div class="display-item btn"><i class="fa-solid fa-joint"></i></div>
             <div class="display-item btn"><i class="fa-solid fa-trowel"></i></div>
             <div class="display-item btn"><i class="fa-solid fa-microscope"></i></div>
             <div class="display-item btn"><i class="fa-brands fa-linux"></i></div>
@@ -122,13 +119,13 @@
     <div class="sol"></div>
     <div id="luna" class="luna"></div>
     <div class="avatar-container btn">
-        <img src="Perfil.jfif" alt="">
+        <a href="mailto:norvazquez2021@gmail.com?subject=Hey ví tu portfolio!"><i class="fa-solid fa-envelope"></i></a>
     </div>
     <a target="_blank" href="https://api.whatsapp.com/send?phone=5491144078669&text=Hola%2C%20Beto!">
 <div class="whatsapp btn">
         <i class="fa-brands fa-whatsapp"></i>
     </div></a>
-    <div id="contador" class="count-container">
+    <div style="display: none;" id="contador" class="count-container">
         <i class="fa-brands fa-youtube"></i>
         <span>horas en cursos de YouTube</span>
         <div id="contadorYT" class="count">0000000</div>
