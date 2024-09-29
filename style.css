@@ -141,7 +141,7 @@ button {
         align-items: center;
         transition: all 1.5s;
         iframe {
-            max-width: 80%;
+            max-width: 80%!important;
             border-radius: 10px;
             box-shadow: 0 0 10px;
             margin-top: 20px;
